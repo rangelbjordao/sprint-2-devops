@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bem-Estar Digital</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 16px;
+      color: #555;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 10px 0;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #333;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .row span {
+      font-size: 28px;
+      margin-right: 8px;
+    }
+
+    .bar {
+      display: flex;
+      height: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #e0e0e0;
+    }
+
+    .bar > div {
+      height: 100%;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 8px;
+      font-size: 12px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .music-stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 8px;
+    }
+
+    .button {
+      background-color: #4a90e2;
+      color: #ffffff;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 16px;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .week {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .week-day {
+      flex: 1;
+    }
+
+    .week-day span {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+
+    .week-day .valor {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Olá, Usuário!</h1>
+    <p class="subtitle">Veja como seu bem-estar digital está hoje.</p>
+
+    <!-- CardHumorAtual -->
+    <section class="card">
+      <h2>Seu Humor Atual</h2>
+      <div class="row">
+        <span>😄</span>
+        <p style="font-size: 20px; font-weight: 600;">Equilibrado e Positivo</p>
+      </div>
+      <p>Seu consumo recente indica um estado de humor estável.</p>
+    </section>
+
+    <!-- CardResumoConsumo -->
+    <section class="card">
+      <h2>Resumo do Consumo</h2>
+
+      <div class="section">
+        <div class="row">
+          <span>📖</span>
+          <p style="color: #007bff; font-weight: 600;">Análise de Notícias</p>
+        </div>
+
+        <div class="bar">
+          <div style="flex: 40; background-color: #50C878;"></div>
+          <div style="flex: 40; background-color: #A9A9A9;"></div>
+          <div style="flex: 20; background-color: #E97451;"></div>
+        </div>
+
+        <div class="legend">
+          <div class="legend-item">
+            <div class="dot" style="background-color: #50C878;"></div>
+            <span>Positivas</span>
+          </div>
+          <div class="legend-item">
+            <div class="dot" style="background-color: #A9A9A9;"></div>
+            <span>Neutras</span>
+          </div>
+          <div class="legend-item">
+            <div class="dot" style="background-color: #E97451;"></div>
+            <span>Negativas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="row">
+          <span>🎵</span>
+          <p style="color: #007bff; font-weight: 600;">Análise de Músicas</p>
+        </div>
+
+        <div class="music-stats">
+          <p>Energia Média: <strong>0.75</strong></p>
+          <p>Positividade: <strong>0.82</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CardRecomendacao -->
+    <section class="card">
+      <h2>Recomendação do Dia</h2>
+      <p style="font-size: 22px;">⚠️</p>
+      <p>Notamos um aumento no consumo de notícias negativas hoje. Que tal equilibrar com uma playlist mais calma?</p>
+      <div class="button">Ver Playlist Relaxante</div>
+    </section>
+
+    <!-- CardHumorSemana -->
+    <section class="card">
+      <h2>Evolução do Humor na Semana</h2>
+      <div class="week">
+        <div class="week-day">
+          <span>😊</span>
+          <div class="valor">85</div>
+          <div>S</div>
+        </div>
+        <div class="week-day">
+          <span>😐</span>
+          <div class="valor">70</div>
+          <div>T</div>
+        </div>
+        <div class="week-day">
+          <span>😐</span>
+          <div class="valor">55</div>
+          <div>Q</div>
+        </div>
+        <div class="week-day">
+          <span>☹️</span>
+          <div class="valor">30</div>
+          <div>Q</div>
+        </div>
+        <div class="week-day">
+          <span>😊</span>
+          <div class="valor">90</div>
+          <div>S</div>
+        </div>
+        <div class="week-day">
+          <span>😐</span>
+          <div class="valor">60</div>
+          <div>S</div>
+        </div>
+        <div class="week-day">
+          <span>☹️</span>
+          <div class="valor">40</div>
+          <div>D</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
