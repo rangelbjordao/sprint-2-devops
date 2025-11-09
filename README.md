@@ -16,5 +16,3 @@ Tecnologias utilizadas:
 
 A aplicação foi executada em uma VM Linux provisionada no provedor de nuvem.  
 O Docker foi instalado na VM e o deployment da aplicação foi realizado diretamente via Dockerfile.
-
----
